@@ -15,14 +15,16 @@ Terraform for scalable, repeatable infrastructure management.
 
 | Component | Specification | Purpose | Est. Monthly Cost |
 |-----------|--------------|---------|-------------------|
-| **Virtual Machine** | Windows Server 2022 (Standard_B1ms, Zone 1) | Application server hosting | ~450 LKR |
-| **Web Application** | Linux App Service (B1, Node.js 22 LTS) | Customer portal hosting | ~400 LKR |
-| **Storage Account** | StorageV2, RAGRS, Hot tier | File system and backups | ~150-300 LKR |
-| **Virtual Network** | VNet + Subnet + NSG | Network isolation and security | ~150 LKR |
-| **Public IP** | Static, Standard SKU | External VM access | ~90 LKR |
-| **Total** | | | **~1,500-2,000 LKR** |
+| **Virtual Machine** | Windows Server 2022 (Standard_B1ms, Zone 1) | Application server hosting | ~2,325 LKR (~$7.50) |
+| **Web Application** | Linux App Service (B1, Node.js 22 LTS) | Customer portal hosting | ~4,030 LKR (~$13) |
+| **Storage Account** | StorageV2, RAGRS, Hot tier | File system and backups | ~1,550 LKR (~$5) |
+| **Virtual Network** | VNet + Subnet + NSG | Network isolation and security | ~930 LKR (~$3) |
+| **Public IP** | Static, Standard SKU | External VM access | ~465 LKR (~$1.50) |
+| **Total** | | | **~9,300 LKR (~$30)** |
 
 ### Budget Configuration
-- **Budget Limit**: LKR 5,000/month 
-- **Budget Alerts**: Configured at 80% (LKR 4,000) and 100% (LKR 5,000)
-- **Current Utilization**: 30-40% of allocated budget
+- **Budget Limit**: LKR 12,000/month (or ~$40 USD/month)
+- **Current Utilization**: ~9,300 LKR (78% of budget)
+- **Budget Alerts**: Configured at 80% (LKR 9,600) and 100% (LKR 12,000)
+- **Reserved Capacity**: ~2,700 LKR available for scaling and data transfer costs
+- **Cost Controls**: VM scheduled shutdown during non-business hours, optimized storage tiers
