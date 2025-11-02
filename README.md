@@ -15,7 +15,7 @@ Terraform for scalable, repeatable infrastructure management.
 
 | Component | Specification | Purpose | Est. Monthly Cost |
 |-----------|--------------|---------|-------------------|
-| **Virtual Machine** | Windows Server 2022 (Standard_B1ms, Zone 1) | Application server hosting | ~2,325 LKR (~$7.50) |
+| **Virtual Machine** | Windows Server 2022 (Standard_B1ms, Zone 1) | Application server hosting | 2,325 LKR (~$7.50) |
 | **Web Application** | Linux App Service (B1, Node.js 22 LTS) | Customer portal hosting | ~4,030 LKR (~$13) |
 | **Storage Account** | StorageV2, RAGRS, Hot tier | File system and backups | ~1,550 LKR (~$5) |
 | **Virtual Network** | VNet + Subnet + NSG | Network isolation and security | ~930 LKR (~$3) |
