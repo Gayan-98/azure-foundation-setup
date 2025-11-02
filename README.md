@@ -11,9 +11,18 @@ Terraform for scalable, repeatable infrastructure management.
 
 ![Architecture Diagram](./docs/architecture-diagram.png)
 
-### Components
-- **Virtual Machine**: Windows Server 2022 (Standard_B1ms)
-- **Web Application**: Linux App Service with Node.js 22 LTS
-- **Storage**: Azure Storage Account with blob retention policies
-- **Networking**: Virtual Network with subnet and Network Security Group
-- **Security**: NSG rules, HTTPS enforcement, TLS 1.2 minimum
+## Architecture Components
+
+| Component | Specification | Purpose | Est. Monthly Cost |
+|-----------|--------------|---------|-------------------|
+| **Virtual Machine** | Windows Server 2022 (Standard_B1ms, Zone 1) | Application server hosting | ~450 LKR |
+| **Web Application** | Linux App Service (B1, Node.js 22 LTS) | Customer portal hosting | ~400 LKR |
+| **Storage Account** | StorageV2, RAGRS, Hot tier | File system and backups | ~150-300 LKR |
+| **Virtual Network** | VNet + Subnet + NSG | Network isolation and security | ~150 LKR |
+| **Public IP** | Static, Standard SKU | External VM access | ~90 LKR |
+| **Total** | | | **~1,500-2,000 LKR** |
+
+### Budget Configuration
+- **Budget Limit**: LKR 5,000/month 
+- **Budget Alerts**: Configured at 80% (LKR 4,000) and 100% (LKR 5,000)
+- **Current Utilization**: 30-40% of allocated budget
