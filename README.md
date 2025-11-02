@@ -20,10 +20,10 @@ Terraform for scalable, repeatable infrastructure management.
 | **Storage Account** | StorageV2, RAGRS, Hot tier | File system and backups | 1,550 LKR (~$5) |
 | **Virtual Network** | VNet + Subnet + NSG | Network isolation and security | 930 LKR (~$3) |
 | **Public IP** | Static, Standard SKU | External VM access | 465 LKR (~$1.50) |
-| **Total** | | | **~9,300 LKR (~$30)** |
+| **Total** | | | **9,300 LKR (~$30)** |
 
 ### Budget Configuration
 - **Budget Limit**: LKR 12,000/month (or ~$40 USD/month)
 - **Budget Alerts**: Configured at 80% (LKR 9,600) and 100% (LKR 12,000)
-- **Reserved Capacity**: ~2,700 LKR available for scaling and data transfer costs
+- **Reserved Capacity**: 2,700 LKR available for scaling and data transfer costs
 
