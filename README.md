@@ -1,6 +1,6 @@
 # Azure Foundation Setup
 
-> Enterprise cloud infrastructure using Terraform IaC
+> cloud infrastructure using Terraform IaC
 
 ## Overview
 Complete Azure foundation setup for a startup company migration including 
